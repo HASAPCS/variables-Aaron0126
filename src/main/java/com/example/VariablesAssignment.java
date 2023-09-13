@@ -46,3 +46,5 @@ public class VariablesAssignment {
         return reversed.toString();
     }
 }
+
+//Functions//
