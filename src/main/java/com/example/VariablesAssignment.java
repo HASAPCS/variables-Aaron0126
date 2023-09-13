@@ -3,44 +3,46 @@ package com.example;
 public class VariablesAssignment {
 
     // TODO: Declare and initialize a byte variable with any value between 1 and 127
-    byte byteVariable;
+    byte byteVariable = 11;
 
     // TODO: Declare and initialize a short variable with any value between 1 and 32767
-    short shortVariable;
+    short shortVariable = 1;
 
     // TODO: Declare and initialize an int variable with any positive value
-    int intVariable;
+    int intVariable = 2;
 
     // TODO: Declare and initialize a long variable with any positive value
-    long longVariable;
+    long longVariable = 3L;
 
     // TODO: Declare and initialize a float variable with any positive value
-    float floatVariable;
+    float floatVariable = 50f;
 
     // TODO: Declare and initialize a double variable with any positive value
-    double doubleVariable;
+    double doubleVariable = 192.3d;
 
     // TODO: Declare and initialize a char variable with the initial of your first name
-    char charVariable;
+    char charVariable = 'H';
 
     // TODO: Declare and initialize a boolean variable with the value true or false
-    boolean booleanVariable;
+    boolean booleanVariable = true;
 
     // TODO: Create a method that accepts two integers as parameters and returns their sum
     public int sum(int a, int b) {
-        // Your code here
-        return 0; // Change this line to return the actual sum
+        return a + b;
     }
 
     // TODO: Create a method that accepts two double parameters and returns their product
     public double product(double a, double b) {
-        // Your code here
-        return 0; // Change this line to return the actual product
+        return a * b;
     }
 
-    // TODO: Create a method that accepts a string parameter and returns it in reverse
-    public String reverseString(String str) {
-        // Your code here
-        return ""; // Change this line to return the reversed string
+    public static String reverseString(String input) {
+        StringBuilder reversed = new StringBuilder();
+
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversed.append(input.charAt(i));
+        }
+
+        return reversed.toString();
     }
 }
